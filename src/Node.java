@@ -1,17 +1,25 @@
 public class Node {
     private Node next;
     private Node previous;
+    private int actual;
     private int numberOfTurn;
+    private int passedTimes;
 
-    public Node getActual() {
+    public int getPassedTimes() {
+        return passedTimes;
+    }
+
+    public void setPassedTimes(int passedTimes) {
+        this.passedTimes = passedTimes;
+    }
+
+    public int getActual() {
         return actual;
     }
 
-    public void setActual(Node actual) {
+    public void setActual(int actual) {
         this.actual = actual;
     }
-
-    private Node actual;
 
     public Node(int numberOfTurn) {
         this.numberOfTurn = numberOfTurn;

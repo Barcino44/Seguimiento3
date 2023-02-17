@@ -21,8 +21,9 @@ public class Main {
             else if(option==3){
                 list.pasarTurno();
             }
-
+            else if (option==4){
+                list.seguir();
+            }
         } while (option!=0);
-
     }
 }
